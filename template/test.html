@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <hr/>
+    <form method="POST">
+        {% csrf_token %}
+    Employee Name : <input type="text"placeholder="Enter Name" name="name" required/><br/>
+    Email : <input type="text" placeholder="Enter email ID" name="email" required/><br/>
+    Country : <input type="text" placeholder="Your Country" name="country" required/><br/>
+    <input type="submit" value="Submit">
+    {% if message %}
+    {% for message in messages %}
+    <h2 style="color: green;">{{message}}</h2>
+    {% endfor %}
+    {% endif %}
+    </form>
+    <hr/>
+</body>
+</html>
