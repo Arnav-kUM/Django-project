@@ -74,6 +74,10 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+port = os.Getenv('PORT')
+if port == '':
+    port = 8080
+
 DATABASES = {  
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
@@ -81,7 +85,7 @@ DATABASES = {
         'USER': 'umxwlaeixm798koi',  
         'PASSWORD': 'z14TvShCJmSmzWHQYSg7',  
         'HOST': 'bknpyojehccffusqflrq-mysql.services.clever-cloud.com',  
-        'PORT': '3306',  
+        'PORT': port,  
         'OPTIONS': {  
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
         }  
