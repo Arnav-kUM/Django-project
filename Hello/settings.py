@@ -77,15 +77,15 @@ WSGI_APPLICATION = 'Hello.wsgi.application'
 DATABASES = {  
     'default': {  
         'ENGINE': 'django.db.backends.mysql',  
-        'NAME': 'dbms',  
-        'USER': 'root',  
-        'PASSWORD': 'Arnav@123',  
-        'HOST': '127.0.0.1',  
+        'NAME': 'bknpyojehccffusqflrq',  
+        'USER': 'umxwlaeixm798koi',  
+        'PASSWORD': 'z14TvShCJmSmzWHQYSg7',  
+        'HOST': 'bknpyojehccffusqflrq-mysql.services.clever-cloud.com',  
         'PORT': '3306',  
         'OPTIONS': {  
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
         }  
-    }  
+    }   
 } 
 
 # Password validation
